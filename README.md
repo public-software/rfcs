@@ -13,25 +13,24 @@ Planned components: RFC-0000 template · accepted/ · rejected/
 
 ## In 30 seconds
 
-_A runnable example goes here the day the first crate lands._
+A design that crosses repositories or changes an interface is written down here before it is built. Copy [`0000-template.md`](0000-template.md) to `text/0000-<slug>.md`, open a pull request, rename the file to the pull request number. Review happens on the pull request; open questions go to [Discussions](https://github.com/public-software/rfcs/discussions). The process is [RFC-0000](text/0000-rfc-process.md); the short version is [CONTRIBUTING](CONTRIBUTING.md).
 
-## What it does
+## Lifecycle
 
-## What it does not do (yet)
+`draft` (an open pull request) → `final comment period` (label `rfc/final-comment-period`, 10 calendar days) → `accepted` (merged into `text/`), `rejected` (closed with the reason) or `postponed` (closed with `rfc/postponed`). An accepted RFC can later be `superseded` by a newer one; its file stays and says so in its decision record.
 
-## Status
+## Decision log
 
-| Ledger entry | Readiness | Next |
-|---|---|---|
-
-## How it fits the suite
-
-Implements: _none yet_ · Requires: _none yet_ (see `CATALOG.toml`)
+| RFC | Title | State | Decided | Pull request |
+|---|---|---|---|---|
+| 0000 | [The RFC process](text/0000-rfc-process.md) | accepted | 2026-09-03 | bootstrap |
+| 0001 | [AI contributions](text/0001-ai-contributions.md) | accepted | 2026-09-03 | bootstrap |
+| 0002 | [WIT package versioning and distribution](text/0002-wit-package-versioning.md) | accepted | 2026-09-03 | bootstrap |
 
 ## Contributing
 
-`pub check` must pass. See the org-wide [CONTRIBUTING](https://github.com/public-software/.github/blob/main/CONTRIBUTING.md) and `PROVENANCE.md`.
+See [CONTRIBUTING](CONTRIBUTING.md). `pub check` must pass; commits are signed off (DCO) and signed.
 
 ## Provenance
 
-See `PROVENANCE.md`.
+See `PROVENANCE.md`. The process follows the shape of [rust-lang/rfcs](https://github.com/rust-lang/rfcs) (MIT OR Apache-2.0), read as a process, not copied as text.
